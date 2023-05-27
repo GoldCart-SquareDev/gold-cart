@@ -7,6 +7,7 @@ import Forgotpassword from "./pages/forgot-password/Forgotpassword";
 import Resetpassword from "./pages/reset-password/Resetpassword";
 import BuyerHome from "./pages/Buyer/Buyer";
 import Account from "./pages/user-account/Account";
+import Location from "./pages/location/Location";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route  path="/reset-password" element={<Resetpassword />} />
       <Route  path="/buyer-home" element={<BuyerHome />} />
       <Route  path="/account" element={<Account />} />
+      <Route  path="/location" element={<Location />} />
     </Routes>
     </BrowserRouter>
   );
