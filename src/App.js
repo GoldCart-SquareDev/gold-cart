@@ -8,6 +8,8 @@ import Resetpassword from "./pages/reset-password/Resetpassword";
 import BuyerHome from "./pages/Buyer/Buyer";
 import Account from "./pages/user-account/Account";
 import Location from "./pages/location/Location";
+import Cart from "./pages/cart/Cart";
+import Product from "./pages/product/Product";
 
 
 function App() {
@@ -23,6 +25,9 @@ function App() {
       <Route  path="/buyer-home" element={<BuyerHome />} />
       <Route  path="/account" element={<Account />} />
       <Route  path="/location" element={<Location />} />
+      <Route  path="/cart" element={<Cart />} />
+      <Route  path="/products" element={<Product />} />
+      
     </Routes>
     </BrowserRouter>
   );
