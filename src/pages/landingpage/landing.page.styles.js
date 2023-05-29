@@ -108,7 +108,7 @@ margin-left:0.4rem;
 export const LinkContainer = styled(Link)`
 display: flex;
 margin-top: 1.3rem;
-margin-left: 1rem;
+margin-left: 2rem;
 color: #F77F00;
 font-size: large;
 font-family: Arial, Helvetica, sans-serif;
@@ -144,7 +144,7 @@ export const Select = styled.select`
 export const CartContainer = styled.div`
 display: div;
 margin-top: 1.4rem;
-margin-left: 1rem;
+margin-left: 2rem;
 
 & img {
 width:1rem;
