@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    ProductParent,
+    ProductreviewParent,
     ProductNavBar,
     NavBarContainer,
     LogoContainer,
@@ -10,34 +10,30 @@ import {
     LinkContainer,
     CartContainer,
     Select,
-    Side,
-    Productside,
     TopWrapper,
-    Brand,
     SummaryCard,
-    SummaryContainer
-} from "./product.styles";
+    SellerProducts,
+    ContentWrapper,
+    Wrapper,
+    ReviewContainer
+} from "./product.review.styles";
 import logo from "../../assets/logo.png";
 import searchIcon from "../../assets/search-icon.png";
 import cart from "../../assets/cart.png";
 import { Link } from "react-router-dom";
-import phonelogo from "../../assets/phonelogo.png";
-import otherslogo from "../../assets/otherslogo.png";
-import accessorylogo from "../../assets/accessorylogo.png";
-import medialogo from "../../assets/medialogo.png";
-import laptoplogo from "../../assets/laptoplogo.png";
 import { FooterWrapper } from "../landingpage/landing.page.styles";
 import Footer from "../../components/footer/Footer";
-import product1 from "../../assets/product1.png";
-import product2 from "../../assets/product2.png";
-import product3 from "../../assets/product3.png";
+import oraimonew from "../../assets/oraimonew.png";
+import Seller from "../../components/seller-wrap/Seller.js";
+import Review from "../../components/review/Review";
 
 
-const Product = () => {
+
+const Productreview = () => {
 
 
     return (
-        <ProductParent>
+        <ProductreviewParent>
             <ProductNavBar>
                 <NavBarContainer>
                     <LogoContainer>
@@ -72,37 +68,26 @@ const Product = () => {
                 </NavBarContainer>
             </ProductNavBar>
             <TopWrapper>
-               
-                <Side>
-                    <Link><img src={phonelogo} alt='phonelogo' />Phones & Tablets</Link>
-                    <Link><img src={laptoplogo} alt='laptoplogo' />Laptops</Link>
-                    <Link><img src={accessorylogo} alt='accessorylogo' />Accessories</Link>
-                    <Link><img src={medialogo} alt='medialogo' />Media gadgets</Link>
-                    <Link><img src={otherslogo} alt='otherslogo' />Others</Link>
-                </Side>
-                <Brand>
+                <Wrapper>
+                    <SummaryCard background="#FFFFFF" borderColor="#FFFFFF">
+                        <img src={oraimonew} alt="oraimonew" />
+                    </SummaryCard>
+                    <ContentWrapper>
 
-                </Brand>
+                    </ContentWrapper>
+                </Wrapper>
 
-                <Productside>
-                    <SummaryContainer>
-                        <SummaryCard background="#FFFFFF" borderColor="#FFFFFF">
-                            <img src={product1} alt="product1" />
-                        </SummaryCard>
-                        <SummaryCard background="#FBFAF9" borderColor="#FBFAF9">
-                            <img src={product2} alt="product2" />
-                        </SummaryCard>
-                        <SummaryCard background="#FFFFFF" borderColor="#FFFFFF">
-                            <img src={product3} alt="product3" />
-                        </SummaryCard>
-                        <SummaryCard background="#FFFFFF" borderColor="#FFFFFF">
-                            <img src={product1} alt="product1" />
-                        </SummaryCard>
-                        
-                       
+                <ReviewContainer>
+                    <Review />
+                </ReviewContainer>
 
-                    </SummaryContainer>
-                </Productside>
+                <SellerProducts>
+
+                    <Seller />
+
+                </SellerProducts>
+
+
             </TopWrapper>
             <FooterWrapper>
                 <Footer />
@@ -112,7 +97,7 @@ const Product = () => {
 
 
 
-        </ProductParent>
+        </ProductreviewParent>
 
 
 
@@ -132,4 +117,4 @@ const Product = () => {
 }
 
 
-export default Product;
+export default Productreview;
