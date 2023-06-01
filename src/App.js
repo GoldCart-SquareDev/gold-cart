@@ -10,6 +10,9 @@ import Account from "./pages/user-account/Account";
 import Location from "./pages/location/Location";
 import Cart from "./pages/cart/Cart";
 import Product from "./pages/product/Product";
+import ProductOverview from "./pages/product-overview/Productoverview";
+import Productspecification from "./pages/product-specification/Productspecification";
+import Productreview from "./pages/product-review/Productreview";
 
 
 function App() {
@@ -27,7 +30,9 @@ function App() {
       <Route  path="/location" element={<Location />} />
       <Route  path="/cart" element={<Cart />} />
       <Route  path="/products" element={<Product />} />
-      
+      <Route  path="/product-overview" element={<ProductOverview />} />
+      <Route  path="/product-specification" element={<Productspecification />} />
+      <Route  path="/product-review" element={<Productreview />} />
     </Routes>
     </BrowserRouter>
   );
