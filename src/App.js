@@ -13,6 +13,7 @@ import Product from "./pages/product/Product";
 import ProductOverview from "./pages/product-overview/Productoverview";
 import Productspecification from "./pages/product-specification/Productspecification";
 import Productreview from "./pages/product-review/Productreview";
+import Productdelivery from "./pages/product-delivery/Productdelivery";
 
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
       <Route  path="/product-overview" element={<ProductOverview />} />
       <Route  path="/product-specification" element={<Productspecification />} />
       <Route  path="/product-review" element={<Productreview />} />
+      <Route  path="/product-delivery" element={<Productdelivery />} />
+      
     </Routes>
     </BrowserRouter>
   );
