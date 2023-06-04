@@ -308,5 +308,6 @@ height: 50%;
 display: flex;
 background:#002233;
 padding-top: 5rem; 
-margin-top: 30rem;     
+margin-top: 15rem;     
 `;
+

@@ -23,8 +23,8 @@ height:100%;
 
 
 export const PersonalInformationParent = styled.section`
-  width: 50%;
-  height: 70vh;
+  width: 45%;
+  height: 80vh;
   display: flex;
   border-radius: 12px;
   background:#ffffff;
@@ -42,7 +42,7 @@ export const PersonalInfoWrapper = styled.div`
 export const Heading = styled.h3`
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 1rem;
   color: #1e1e1e;
   margin-left:1rem;
 
@@ -50,14 +50,15 @@ export const Heading = styled.h3`
 
 export const PersonalInformationForm = styled.form`
   width: 100%;
-  height: 60%;
-  margin-top: 1rem;
+  height: 100%;
+  margin-left:1rem;
+  
 `;
 
 export const DivideWrapper = styled.div`
   display: flex;
-  width: 75%;
-  gap: 2rem;
+  width: 80%;
+  gap: 1rem;
   margin-top: 1rem;
 `;
 
