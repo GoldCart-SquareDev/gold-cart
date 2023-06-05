@@ -154,24 +154,39 @@ height: 1rem;
 `;
 
 export const TopWrapper = styled.div`
-width: 100%;
-height: 100%;
+width: 100vw;
+height: 100;
 display: flex;
 background: #E6EAED;
     
 `;
 
 
-
-export const Side = styled.section`
+export const SideWrapper = styled.section`
   width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  background: ##E6EAED;
+  font-size:1.5rem;
+  
+  
+ 
+
+`;
+
+
+export const Side = styled.div`
+  width: 16%;
   height: 40%;
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  margin-left:2rem;
+  position: absolute;
   margin-top:1.5rem;
   background: #fff;
+  margin-right:2rem;
   font-size:1.5rem;
   justify-content: space-around;
   border: 1px solid #fff;
@@ -185,18 +200,12 @@ export const Side = styled.section`
 `;
 
 
-export const Brand = styled.div`
- display:flex;
- flex-direction:row;
- margin-top: 23rem;
- align-item: left;
- background: #fff;
- border: 1px solid #fff;
- border-radius: 10px;
+export const Brand = styled.section`
+ margin-top:23rem;
 
-
- & img {
-   width: auto;
+& img {
+   width: 17rem;
+   height:21rem;
 
  }
 
@@ -204,7 +213,7 @@ export const Brand = styled.div`
 
 export const Productside = styled.div`
 width: 70%;
-height: 100vh;
+height: 50vh;
 display: flex;
 background: #E6EAED;
 margin-top: 1.5rem;
@@ -229,7 +238,7 @@ export const SummaryContainer = styled.section`
 
 export const SummaryCard = styled.div`
   width: 40%;
-  height: 45%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   margin-left:1rem;
@@ -245,3 +254,13 @@ export const SummaryCard = styled.div`
 
   
   `;
+
+  
+export const FooterWrapper = styled.div`
+width: 100%;
+height: 50%;
+display: flex;
+background:#002233;
+padding-top: 5rem; 
+   
+`;

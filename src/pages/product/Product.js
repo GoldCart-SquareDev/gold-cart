@@ -15,7 +15,9 @@ import {
     TopWrapper,
     Brand,
     SummaryCard,
-    SummaryContainer
+    SummaryContainer,
+    SideWrapper,
+    FooterWrapper
 } from "./product.styles";
 import logo from "../../assets/logo.png";
 import searchIcon from "../../assets/search-icon.png";
@@ -26,11 +28,11 @@ import otherslogo from "../../assets/otherslogo.png";
 import accessorylogo from "../../assets/accessorylogo.png";
 import medialogo from "../../assets/medialogo.png";
 import laptoplogo from "../../assets/laptoplogo.png";
-import { FooterWrapper } from "../landingpage/landing.page.styles";
 import Footer from "../../components/footer/Footer";
 import product1 from "../../assets/product1.png";
 import product2 from "../../assets/product2.png";
 import product3 from "../../assets/product3.png";
+import brandlogo from "../../assets/brandlogo.png";
 
 
 const Product = () => {
@@ -72,7 +74,7 @@ const Product = () => {
                 </NavBarContainer>
             </ProductNavBar>
             <TopWrapper>
-               
+               <SideWrapper>
                 <Side>
                     <Link><img src={phonelogo} alt='phonelogo' />Phones & Tablets</Link>
                     <Link><img src={laptoplogo} alt='laptoplogo' />Laptops</Link>
@@ -81,9 +83,9 @@ const Product = () => {
                     <Link><img src={otherslogo} alt='otherslogo' />Others</Link>
                 </Side>
                 <Brand>
-
+                 <img src={brandlogo} alt="brandlogo"/>
                 </Brand>
-
+                </SideWrapper>
                 <Productside>
                     <SummaryContainer>
                         <SummaryCard background="#FFFFFF" borderColor="#FFFFFF">
