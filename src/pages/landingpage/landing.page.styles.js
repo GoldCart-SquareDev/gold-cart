@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { device } from "../../utils/device";
 
 export const LandingPageParent = styled.div`
     width: 100vw;
@@ -160,7 +161,13 @@ height: 50%;
 display: flex;
 background: #E6EAED;
 align-items: center;
-font-size: 1.2rem;       
+font-size: 1.2rem; 
+ 
+@media ${device.laptop} {
+  display: flex;
+  flex-direction: row;
+}
+
 `;
 
 export const Wrapper = styled.div`
