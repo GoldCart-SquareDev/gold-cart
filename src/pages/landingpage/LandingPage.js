@@ -69,8 +69,8 @@ const LandingPage = () => {
             <option value="" hidden>
               Account
             </option>
-            <option value="1" ><Link to="/sign-in">Sign in</Link></option>
-            <option value="2"><Link to="/sign-up">Sign up</Link></option>
+            <option value="1"><Link to="/sign-up">New Customer? Sign up</Link></option>
+            <option value="2"><Link to="/sign-in">Returning Customer? Sign in</Link></option>
           </Select>
           <LinkContainer><Link>Support</Link>
           </LinkContainer>
