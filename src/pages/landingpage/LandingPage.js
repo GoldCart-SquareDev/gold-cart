@@ -14,14 +14,13 @@ import {
   ProductWrapper,
   SearchBarContainer,
   SearchBarForm,
-  Select,
   SummaryCard,
   SummaryContainer,
   SponsoredWrapper,
   TextContainer,
   TopWrapper,
   TrendingWrapper,
-  Wrapper
+  Wrapper,
 } from "./landing.page.styles.js";
 import logo from "../../assets/logo.png";
 import searchIcon from "../../assets/search-icon.png";
@@ -36,6 +35,7 @@ import TrendingProducts from "../../components/trending-products/TrendingProduct
 import LandingCenter from "../../components/landing-center/LandingCenter.js";
 import Sponsored from "../../components/sponsored-wrap/Sponsored.js";
 import Footer from "../../components/footer/Footer.js";
+import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react"
 
 
 
@@ -65,19 +65,23 @@ const LandingPage = () => {
           <Button>Search</Button>
           <LinkContainer><Link>Sell on GoldCart</Link>
           </LinkContainer>
-          <Select>
-            <option value="" hidden>
-              Account
-            </option>
-            <option value="1"><Link to="/sign-up">New Customer? Sign up</Link></option>
-            <option value="2"><Link to="/sign-in">Returning Customer? Sign in</Link></option>
-          </Select>
+          <Menu>
+            <MenuButton 
+              backgroundColor={'#FFF'}
+              borderColor={"#fff"}
+              borderRadius={5}
+              marginLeft={15}fontSize={18}>Account</MenuButton>
+            <MenuList>
+              <MenuItem as='a' href='sign-up' color={'#FFF'} backgroundColor={'#CF9D3A'}>Sign up</MenuItem>
+              <MenuItem as='a' href='sign-in' color={'#FFF'} backgroundColor={'#CF9D3A'}>Sign in</MenuItem>
+            </MenuList>
+          </Menu>
           <LinkContainer><Link>Support</Link>
           </LinkContainer>
           <CartContainer> <img src={cart} alt="cart" /></CartContainer>
         </NavBarContainer>
       </LandingPageNavBar>
-     
+
       <TopWrapper><Wrapper>
         <TextContainer>
           <ButtonWrapper>
@@ -85,14 +89,14 @@ const LandingPage = () => {
               backgroundColor="#CF9D3A"
               color="#fff"
               borderColor="#CF9D3A"
-              width="10rem" 
-              />
+              width="10rem"
+            />
             <FormButton text="Add to Cart"
               backgroundColor="#FEF2E6"
               color="#CF9D3A"
               borderColor="#FEF2E6"
               width="10rem"
-               />
+            />
           </ButtonWrapper>
           <h2>Macbook Pro 16"</h2>
           <h1>Discover the new</h1>
@@ -119,18 +123,18 @@ const LandingPage = () => {
           </SummaryCard>
         </SummaryContainer>
       </ProductWrapper>
-<TrendingWrapper>
-<TrendingProducts/>
-</TrendingWrapper>
-<LandingCentreWrapper>
-  <LandingCenter/>
-</LandingCentreWrapper>
-<SponsoredWrapper>
-  <Sponsored/>
-</SponsoredWrapper>
-<FooterWrapper>
-  <Footer/>
-</FooterWrapper>
+      <TrendingWrapper>
+        <TrendingProducts />
+      </TrendingWrapper>
+      <LandingCentreWrapper>
+        <LandingCenter />
+      </LandingCentreWrapper>
+      <SponsoredWrapper>
+        <Sponsored />
+      </SponsoredWrapper>
+      <FooterWrapper>
+        <Footer />
+      </FooterWrapper>
 
 
 
